@@ -18,11 +18,12 @@
 
 <body>
     <div class="container-fluid" id="main-container">
-        <button type="button" class="btn btn-secondary">Count unique</button>
+        <button type="button" onclick="uniqueAlbums()" class="btn btn-secondary">Count unique</button>
         <button type="button" onclick="songList()" class="btn btn-primary" data-toggle="modal"
             data-target="#exampleModal">
             Song list
         </button>
+
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -39,6 +40,7 @@
                 </div>
             </div>
         </div>
+
         <h2>Pink Floyd:</h2>
         <div class="row" id="pink-container"></div>
         <h2>Daft Punk:</h2>

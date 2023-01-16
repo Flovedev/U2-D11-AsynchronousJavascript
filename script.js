@@ -83,7 +83,15 @@ const getMetallica = () => {
 }
 
 const uniqueAlbums = () => {
-
+    let albumsNode = []
+    let albums = document.getElementsByClassName("card-text")
+    for (let index = 0; index < albums.length; index++) {
+        const element = albums[index].innerHTML;
+        if (albumsNode.indexOf(element) === -1) {
+            albumsNode.push(element)
+        }
+    }
+    console.log(albumsNode)
 }
 
 const songList = () => {
@@ -97,6 +105,8 @@ const songList = () => {
     }
 }
 
-getPink()
-getDaft()
-getMetallica()
+window.onload = function () {
+    getPink();
+    getDaft();
+    getMetallica();
+};
