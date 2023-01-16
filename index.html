@@ -10,16 +10,20 @@
     <title>Ashyncronous homework</title>
 
     <style>
+        body {
+            background-color: rgb(187 187 187);
+        }
 
-
-
+        h2 {
+            margin: 2vh;
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid" id="main-container">
-        <button type="button" onclick="uniqueAlbums()" class="btn btn-secondary">Count unique</button>
-        <button type="button" onclick="songList()" class="btn btn-primary" data-toggle="modal"
+        <button type="button" onclick="uniqueAlbums()" class="btn btn-info m-5">Count unique</button>
+        <button type="button" onclick="songList()" class="btn btn-success m-5" data-toggle="modal"
             data-target="#exampleModal">
             Song list
         </button>
@@ -42,11 +46,11 @@
         </div>
 
         <h2>Pink Floyd:</h2>
-        <div class="row" id="pink-container"></div>
+        <div class="row mx-2" id="pink-container"></div>
         <h2>Daft Punk:</h2>
-        <div class="row" id="daft-container"></div>
+        <div class="row mx-2" id="daft-container"></div>
         <h2>Metallica:</h2>
-        <div class="row" id="metallica-container"></div>
+        <div class="row mx-2" id="metallica-container"></div>
     </div>
 
     <script src="./script.js"></script>

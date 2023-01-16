@@ -12,7 +12,7 @@ const getPink = () => {
         for (let index = 0; index < jsonBand.data.length; index++) {
             const element = jsonBand.data[index];
             container.innerHTML += `
-            <div class="card" style="width: 18rem;">
+            <div class="card m-1" style="width: 18rem;">
                 <img src="${element.album.cover_xl}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${element.title}</h5>
@@ -40,7 +40,7 @@ const getDaft = () => {
         for (let index = 0; index < jsonBand.data.length; index++) {
             const element = jsonBand.data[index];
             container.innerHTML += `
-            <div class="card" style="width: 18rem;">
+            <div class="card m-1" style="width: 18rem;">
                 <img src="${element.album.cover_xl}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${element.title}</h5>
@@ -68,7 +68,7 @@ const getMetallica = () => {
         for (let index = 0; index < jsonBand.data.length; index++) {
             const element = jsonBand.data[index];
             container.innerHTML += `
-            <div class="card" style="width: 18rem;">
+            <div class="card m-1" style="width: 18rem;">
                 <img src="${element.album.cover_xl}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${element.title}</h5>
